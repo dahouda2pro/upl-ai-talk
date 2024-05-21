@@ -4,12 +4,13 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 import useClipboard from "react-use-clipboard";
 import {useState} from "react";
 import logo from './images/logo_vectorise.png'
+import { saveAs } from "file-saver";
 
 
 const App = () => {
     const [textToCopy, setTextToCopy] = useState();
     const [isCopied, setCopied] = useClipboard(textToCopy, {
-        successDuration:1000
+        successDuration:100000
     });
 
     //subscribe to thapa technical for more awesome videos
@@ -19,6 +20,11 @@ const App = () => {
 
     if (!browserSupportsSpeechRecognition) {
         return null
+    }
+
+    const saveTextAsFile = () => {
+        const blob = new Blob([transcript], {type: "text/plain;charset=utf-8"});
+        saveAs(blob, "transcript.txt");
     }
 
     return (
@@ -38,9 +44,7 @@ const App = () => {
                     
                     <button className="first" onClick={startListening}>Commencer a ecouter</button>
                     <button className="second" onClick={SpeechRecognition.stopListening}>Arreter d'ecouter</button>
-                    <button className="third" onClick={setCopied}>
-                        {isCopied ? 'Copie avec succes!' : 'Copier le text'}
-                    </button>
+                    <button className="third" onClick={saveTextAsFile}>Sauvegarder le texte</button>
                 </div>
 
             </div>
