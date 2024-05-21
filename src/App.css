@@ -23,6 +23,7 @@ body {
 .container {
   padding: 30px;
   margin-top: 80px;
+  text-align: center;
 }
 
 h2 {
@@ -136,5 +137,53 @@ button:hover {
 
   .counter-container p:first-child {
     margin-bottom: 0;
+  }
+}
+
+* {
+  font-size: 30px;
+}
+
+.btn-style {
+  display: inline;
+  text-align: center;
+  margin: 10px;
+  height: 100px;
+  width: 200px;
+  
+  
+}
+
+.first {
+  width: 25%;
+  display: inline-block;
+  background-color: green;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.second {
+  width: 25%;
+  display: inline-block;
+  background-color: blue;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.third {
+  width: 25%;
+  display: inline-block;
+  background-color: yellow;
+  color: black;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 500px) {
+
+  .first,
+  .second,
+  .third {
+      width: 70%;
   }
 }

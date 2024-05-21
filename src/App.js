@@ -33,14 +33,14 @@ const App = () => {
                     {transcript}
                 </div>
 
-                <div className="btn-style">
+                <div style={{display:'inline', width:'150px',textAlign:'center'}}>
 
-                    <button onClick={setCopied}>
+                    
+                    <button className="first" onClick={startListening}>Commencer a ecouter</button>
+                    <button className="second" onClick={SpeechRecognition.stopListening}>Arreter d'ecouter</button>
+                    <button className="third" onClick={setCopied}>
                         {isCopied ? 'Copie avec succes!' : 'Copier le text'}
                     </button>
-                    <button onClick={startListening}>Commencer a ecouter</button>
-                    <button onClick={SpeechRecognition.stopListening}>Arreter d'ecouter</button>
-
                 </div>
 
             </div>
