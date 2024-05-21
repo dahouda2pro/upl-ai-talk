@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/upl-ai-talk/static/css/main.ded3b8cf.css",
-    "main.js": "/upl-ai-talk/static/js/main.d515752f.js",
+    "main.js": "/upl-ai-talk/static/js/main.9202fea8.js",
     "static/js/453.ed5efbac.chunk.js": "/upl-ai-talk/static/js/453.ed5efbac.chunk.js",
     "static/media/logo_vectorise.png": "/upl-ai-talk/static/media/logo_vectorise.aea39af3ded284446afd.png",
     "index.html": "/upl-ai-talk/index.html",
     "main.ded3b8cf.css.map": "/upl-ai-talk/static/css/main.ded3b8cf.css.map",
-    "main.d515752f.js.map": "/upl-ai-talk/static/js/main.d515752f.js.map",
+    "main.9202fea8.js.map": "/upl-ai-talk/static/js/main.9202fea8.js.map",
     "453.ed5efbac.chunk.js.map": "/upl-ai-talk/static/js/453.ed5efbac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ded3b8cf.css",
-    "static/js/main.d515752f.js"
+    "static/js/main.9202fea8.js"
   ]
 }
