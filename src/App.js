@@ -36,10 +36,10 @@ const App = () => {
                 <div className="btn-style">
 
                     <button onClick={setCopied}>
-                        {isCopied ? 'Copied!' : 'Copy to clipboard'}
+                        {isCopied ? 'Copie!' : 'Copier le text'}
                     </button>
-                    <button onClick={startListening}>Start Listening</button>
-                    <button onClick={SpeechRecognition.stopListening}>Stop Listening</button>
+                    <button onClick={startListening}>Commencer a ecouter</button>
+                    <button onClick={SpeechRecognition.stopListening}>Arreter d'ecouter</button>
 
                 </div>
 
